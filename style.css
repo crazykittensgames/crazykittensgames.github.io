@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap');
 
-/* =====================
-   VARIABLES & RESET
-   ===================== */
+/* variables y reset */
 :root {
   --bg:          #FFF0F5;
   --white:       #FFFFFF;
@@ -38,10 +36,7 @@ a   { text-decoration: none; color: inherit; }
   color: var(--rose-strong);
 }
 
-
-/* =====================
-   NAVBAR
-   ===================== */
+/* barra de navegacion */
 .navbar {
   background: var(--white);
   box-shadow: 0 2px 16px rgba(255,107,157,0.10);
@@ -95,14 +90,7 @@ a   { text-decoration: none; color: inherit; }
   color: var(--rose-deep);
 }
 
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  flex-shrink: 0;
-}
-
-/* Language selector */
+/* selector de idioma */
 .lang-select-wrap {
   position: relative;
   display: flex;
@@ -166,30 +154,7 @@ a   { text-decoration: none; color: inherit; }
   color: var(--rose-deep);
 }
 
-/* Hamburger */
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  padding: 4px;
-  background: none;
-  border: none;
-}
-.nav-toggle span {
-  display: block;
-  width: 24px; height: 2px;
-  background: var(--rose-strong);
-  border-radius: 2px;
-  transition: transform 0.3s, opacity 0.3s;
-}
-.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-toggle.open span:nth-child(2) { opacity: 0; }
-.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-/* =====================
-   HERO / COVER IMAGE
-   ===================== */
+/* portada */
 .hero-cover {
   width: 100%;
   overflow: hidden;
@@ -217,9 +182,7 @@ a   { text-decoration: none; color: inherit; }
   );
 }
 
-/* =====================
-   INTRO STRIP
-   ===================== */
+/* franja de bienvenida */
 .intro-strip {
   background: var(--white);
   padding: 2.5rem 2rem;
@@ -242,16 +205,7 @@ a   { text-decoration: none; color: inherit; }
   line-height: 1.65;
 }
 
-.intro-btns {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* =====================
-   SHARED SECTION WRAPPER
-   ===================== */
+/* contenedor general de secciones */
 .section {
   padding: 0 2rem;
   max-width: 1100px;
@@ -280,9 +234,7 @@ a   { text-decoration: none; color: inherit; }
   margin-bottom: 3rem;
 }
 
-/* =====================
-   BUTTONS
-   ===================== */
+/* botones */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -321,9 +273,7 @@ a   { text-decoration: none; color: inherit; }
   padding: 0.55rem 1.4rem;
 }
 
-/* =====================
-   STUDIO PANEL (index about us)
-   ===================== */
+/* panel del estudio (about us en el index) */
 .studio-panel {
   background: var(--white);
   border-radius: var(--radius);
@@ -374,36 +324,6 @@ a   { text-decoration: none; color: inherit; }
   justify-content: center;
 }
 
-.studio-panel-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 8px 24px rgba(232,69,122,0.3));
-}
-
-.studio-panel-name {
-  font-family: 'Fredoka One', cursive;
-  font-size: 1.5rem;
-  color: var(--white);
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.studio-panel-badge {
-  background: rgba(255,255,255,0.22);
-  color: var(--white);
-  font-size: 0.7rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding: 0.3rem 0.9rem;
-  border-radius: 50px;
-  border: 1px solid rgba(255,255,255,0.35);
-  position: relative;
-  z-index: 1;
-}
-
 .studio-panel-right {
   padding: 2.8rem;
   display: flex;
@@ -417,10 +337,6 @@ a   { text-decoration: none; color: inherit; }
   font-size: 1.9rem;
   color: var(--text-dark);
   line-height: 1.2;
-}
-
-.studio-panel-right h2 span {
-  color: var(--rose-strong);
 }
 
 .studio-panel-right p {
@@ -504,9 +420,7 @@ a   { text-decoration: none; color: inherit; }
   margin-top: 0;
 }
 
-/* =====================
-   GAME SPOTLIGHT (index)
-   ===================== */
+/* juego destacado (index) */
 .game-spotlight {
   background: var(--white);
   border-radius: var(--radius);
@@ -571,113 +485,7 @@ a   { text-decoration: none; color: inherit; }
   justify-content: center;
 }
 
-/* =====================
-   TEAM PREVIEW (index)
-   ===================== */
-.dev-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.cat-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 2.2rem 1.6rem 1.8rem;
-  text-align: center;
-  position: relative;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.cat-card::before,
-.cat-card::after {
-  content: '';
-  position: absolute;
-  top: -10px;
-  width: 22px; height: 22px;
-  background: var(--white);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-.cat-card::before { left: 18px; }
-.cat-card::after  { right: 18px; }
-.cat-card:hover   { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(255,107,157,0.2); }
-
-.cat-avatar {
-  width: 80px; height: 80px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--rose-light), var(--rose-mid));
-  display: flex; align-items: center; justify-content: center;
-  font-size: 2.2rem;
-  margin: 0 auto 1.1rem;
-  border: 3px solid var(--rose-light);
-}
-.cat-card h3 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 1.25rem; color: var(--text-dark); margin-bottom: 0.25rem;
-}
-.cat-role {
-  font-size: 0.78rem; font-weight: 800; letter-spacing: 1.5px;
-  text-transform: uppercase; color: var(--rose-strong); margin-bottom: 0.8rem;
-}
-.cat-card p { font-size: 0.9rem; color: var(--text-soft); line-height: 1.6; }
-
-/* =====================
-   NEWSLETTER
-   ===================== */
-.newsletter-section {
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 3rem 2.5rem;
-  text-align: center;
-  max-width: 640px;
-  margin: var(--section-gap) auto 0;
-  width: calc(100% - 4rem);
-}
-
-.newsletter-section h2 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 1.8rem;
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
-}
-
-.newsletter-section p {
-  color: var(--text-soft);
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.55;
-}
-
-.newsletter-form {
-  display: flex;
-  gap: 0.7rem;
-  max-width: 440px;
-  margin: 0 auto;
-}
-
-.newsletter-form input[type="email"] {
-  flex: 1;
-  padding: 0.72rem 1.2rem;
-  border: 2px solid var(--rose-mid);
-  border-radius: 50px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.95rem;
-  color: var(--text-dark);
-  background: var(--bg);
-  outline: none;
-  transition: border-color 0.2s;
-}
-.newsletter-form input[type="email"]:focus {
-  border-color: var(--rose-strong);
-}
-.newsletter-form input[type="email"]::placeholder {
-  color: var(--text-soft);
-}
-
-/* =====================
-   SOCIAL SECTION
-   ===================== */
+/* redes sociales */
 .social-section {
   background: linear-gradient(135deg, #FFB6C8 0%, #FF6B9D 100%);
   border-radius: var(--radius);
@@ -726,9 +534,7 @@ a   { text-decoration: none; color: inherit; }
   border-color: rgba(255,255,255,0.6);
 }
 
-/* =====================
-   PAGE HEADER (inner pages)
-   ===================== */
+/* cabecera de pagina (paginas internas) */
 .page-header {
   background: linear-gradient(135deg, #FFD6E7 0%, #FFB6C8 100%);
   padding: 1rem 2rem 3rem;
@@ -745,11 +551,7 @@ a   { text-decoration: none; color: inherit; }
   font-weight: 600;
 }
 
-/* =====================
-   PROJECT ERIKA PAGE
-   ===================== */
-
-/* Credits */
+/* creditos (project erika) */
 .credits-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -840,42 +642,11 @@ a   { text-decoration: none; color: inherit; }
   background: var(--rose-mid);
 }
 
-/* Inspirations */
-.inspo-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-bottom: 3rem;
-  margin-top: 1.5rem;
-}
-
-.inspo-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--white);
-  border: 2px solid var(--rose-mid);
-  border-radius: 50px;
-  padding: 0.5rem 1.1rem;
-  box-shadow: var(--shadow);
-}
-
-.inspo-tag-name {
-  font-family: 'Fredoka One', cursive;
-  font-size: 1rem;
-  color: var(--text-dark);
-}
-
-.inspo-tag-reason {
-  font-size: 0.78rem;
-  color: var(--text-soft);
-  font-weight: 700;
-}
-
 @media (max-width: 700px) {
   .credits-grid { grid-template-columns: 1fr; }
 }
 
+/* portada del juego erika */
 .erika-hero {
   background: var(--white);
   border-radius: var(--radius);
@@ -891,7 +662,6 @@ a   { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 7rem;
   position: relative;
   overflow: hidden;
 }
@@ -900,11 +670,6 @@ a   { text-decoration: none; color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.erika-cover-placeholder {
-  position: absolute;
-  font-size: 7rem;
 }
 
 .erika-meta {
@@ -962,7 +727,7 @@ a   { text-decoration: none; color: inherit; }
   border-top: 3px dotted var(--rose-mid);
 }
 
-/* Trailer embed */
+/* tráiler */
 .trailer-wrap {
   background: var(--white);
   border-radius: var(--radius);
@@ -992,7 +757,7 @@ a   { text-decoration: none; color: inherit; }
   border: none;
 }
 
-/* Screenshots grid */
+/* capturas de pantalla */
 .screenshots-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1003,19 +768,13 @@ a   { text-decoration: none; color: inherit; }
 .screenshot-slot {
   background: #f2c4d4;
   border-radius: 16px;
-  aspect-ratio: unset;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
-  overflow: visible;
   min-height: 220px;
   position: relative;
   padding: 10px 10px 52px 10px;
 }
-
-.screenshot-slot::before { display: none; }
-.screenshot-slot::after  { display: none; }
 
 .screenshot-slot img {
   width: 100%;
@@ -1029,8 +788,7 @@ a   { text-decoration: none; color: inherit; }
 .screenshot-slot:nth-child(odd)  { transform: rotate(-1.2deg); }
 .screenshot-slot:nth-child(even) { transform: rotate(1deg); }
 
-/* chincheta */
-
+/* chincheta de la foto */
 .screenshot-slot .photo-clip {
   position: absolute;
   top: -20px;
@@ -1055,46 +813,8 @@ a   { text-decoration: none; color: inherit; }
   border-radius: 50%;
   background: #f5d5df;
 }
-/* =====================
-   GAMES LIST
-   ===================== */
-.games-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.8rem;
-}
 
-.game-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.game-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 36px rgba(255,107,157,0.2);
-}
-.game-card-cover {
-  height: 200px;
-  background: linear-gradient(135deg, #FFB6C8 0%, #FF6B9D 60%, #E8457A 100%);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 4.5rem;
-}
-.game-card-info {
-  padding: 1.5rem 1.6rem;
-}
-.game-card-info h2 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 1.4rem; color: var(--text-dark); margin-bottom: 0.4rem;
-}
-.game-card-info p {
-  color: var(--text-soft); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.2rem;
-}
-
-/* =====================
-   TEAM PAGE
-   ===================== */
+/* pagina de equipo */
 .dev-page-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1162,82 +882,7 @@ a   { text-decoration: none; color: inherit; }
 }
 .member-social-link:hover { background: var(--rose-mid); transform: scale(1.1); }
 
-/* =====================
-   DONATE PAGE
-   ===================== */
-.donate-intro {
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 3rem 2.5rem;
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.donate-intro h2 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 2rem;
-  color: var(--text-dark);
-  margin-bottom: 0.7rem;
-}
-
-.donate-intro p {
-  color: var(--text-soft);
-  font-size: 0.97rem;
-  line-height: 1.7;
-  max-width: 580px;
-  margin: 0 auto 2rem;
-}
-
-.donate-tiers {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.donate-tier {
-  background: var(--bg);
-  border: 2px solid var(--rose-mid);
-  border-radius: var(--radius);
-  padding: 2rem 1.5rem;
-  text-align: center;
-  transition: border-color 0.2s, transform 0.2s;
-}
-
-.donate-tier:hover {
-  border-color: var(--rose-strong);
-  transform: translateY(-4px);
-}
-
-.donate-tier.featured {
-  border-color: var(--rose-strong);
-  background: linear-gradient(135deg, #FFF0F5, #FFD6E7);
-}
-
-.donate-tier .tier-icon { font-size: 2.5rem; margin-bottom: 0.8rem; }
-.donate-tier .tier-amount {
-  font-family: 'Fredoka One', cursive;
-  font-size: 2rem;
-  color: var(--rose-strong);
-}
-.donate-tier .tier-name {
-  font-weight: 800;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--text-soft);
-  margin-bottom: 0.7rem;
-}
-.donate-tier p {
-  color: var(--text-soft);
-  font-size: 0.87rem;
-  line-height: 1.55;
-}
-
-/* =====================
-   SUPPORT SECTION (index)
-   ===================== */
+/* formas de apoyarnos */
 .support-section {
   text-align: left;
 }
@@ -1289,9 +934,7 @@ a   { text-decoration: none; color: inherit; }
   margin-bottom: 0.5rem;
 }
 
-/* =====================
-   NOVEDADES / NEWS
-   ===================== */
+/* ultimas noticias */
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1331,9 +974,7 @@ a   { text-decoration: none; color: inherit; }
   color: var(--text-soft); font-size: 0.88rem; line-height: 1.55;
 }
 
-/* =====================
-   404
-   ===================== */
+/* pagina 404 */
 .error-page {
   flex: 1;
   display: flex; flex-direction: column;
@@ -1351,9 +992,7 @@ a   { text-decoration: none; color: inherit; }
 }
 .error-page p { color: var(--text-soft); font-size: 1rem; margin-bottom: 2rem; }
 
-/* =====================
-   FOOTER
-   ===================== */
+/* pie de pagina */
 .footer {
   background: var(--white);
   border-top: 2px solid var(--rose-light);
@@ -1410,9 +1049,7 @@ a   { text-decoration: none; color: inherit; }
 }
 .footer-bottom p { color: var(--text-soft); font-size: 0.83rem; }
 
-/* =====================
-   LOGO ANIMACION (about us)
-   ===================== */
+/* logo animado (about us) */
 .studio-panel-logo .logo-container {
   position: relative;
   display: inline-flex;
@@ -1467,68 +1104,45 @@ a   { text-decoration: none; color: inherit; }
   animation: cat-bounce 0.55s ease-in-out forwards;
 }
 
-/* =====================
-   RESPONSIVE
-   ===================== */
+/* adaptable a moviles */
 @media (max-width: 900px) {
-  .game-spotlight        { grid-template-columns: 1fr; }
-  .dev-grid              { grid-template-columns: 1fr 1fr; }
-  .footer-inner          { grid-template-columns: 1fr 1fr; }
+  .game-spotlight { grid-template-columns: 1fr; }
+  .footer-inner    { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 750px) {
-  .studio-panel          { grid-template-columns: 1fr; }
-  .studio-panel-left     { padding: 2.5rem 2rem 2rem; }
-  .studio-panel-right    { padding: 2rem 1.8rem; }
+  .studio-panel       { grid-template-columns: 1fr; }
+  .studio-panel-left  { padding: 2.5rem 2rem 2rem; }
+  .studio-panel-right { padding: 2rem 1.8rem; }
 }
 
 @media (max-width: 700px) {
   :root { --section-gap: 3rem; }
 
-  .nav-toggle { display: flex; }
-
-  .lang-select { max-width: 110px; font-size: 0.78rem; padding: 0.32rem 0.7rem; }
-
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.8rem 1.2rem;
+    row-gap: 0.6rem;
+  }
   .navbar-links {
-    display: none;
-    position: absolute;
-    top: var(--nav-h);
-    left: 0; right: 0;
-    background: var(--white);
-    flex-direction: column;
-    padding: 1.2rem 1.5rem 1.5rem;
-    gap: 0.3rem;
-    box-shadow: 0 8px 24px rgba(255,107,157,0.15);
-    border-top: 2px solid var(--rose-light);
-    z-index: 199;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
   }
 
-  .navbar-links.open { display: flex; }
-
-  .navbar-links a {
-    display: block;
-    width: 100%;
-    padding: 0.65rem 1.1rem;
-    font-size: 1rem;
-  }
-
-  .dev-grid              { grid-template-columns: 1fr; }
-  .footer-inner          { grid-template-columns: 1fr; gap: 1.5rem; }
-  .erika-meta            { flex-direction: column; }
-  .erika-actions         { flex-direction: row; flex-wrap: wrap; }
-  .newsletter-form       { flex-direction: column; }
-  .newsletter-section    { width: calc(100% - 2rem); }
-  .social-section        { width: calc(100% - 2rem); }
-  .hero-cover img        { height: 55vw; min-height: 240px; }
-  .hero-cover            { max-height: none; }
+  .footer-inner       { grid-template-columns: 1fr; gap: 1.5rem; }
+  .erika-meta         { flex-direction: column; }
+  .erika-actions      { flex-direction: row; flex-wrap: wrap; }
+  .social-section     { width: calc(100% - 2rem); }
+  .hero-cover img     { height: 55vw; min-height: 240px; }
+  .hero-cover         { max-height: none; }
 }
 
 @media (max-width: 480px) {
   :root { --section-gap: 2.5rem; }
 
-  .navbar                { padding: 0 1rem; }
-  .section               { padding: 0 1.2rem; }
-  .donate-tiers          { grid-template-columns: 1fr; }
-  .studio-stats          { grid-template-columns: 1fr 1fr; }
-  .erika-cover           { height: 220px; }
+  .navbar       { padding: 0 1rem; }
+  .section      { padding: 0 1.2rem; }
+  .erika-cover  { height: 220px; }
 }
