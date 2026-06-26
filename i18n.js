@@ -112,7 +112,16 @@ const STRINGS = {
                             es: "¿Te ha llamado la atención?" },
   "erika.wishlist_p":     { en: "<em>Add Project Erika to your Steam wishlist!</em> <br>This would help us more than you know and make it possible for more people to discover our game.",
                             es: "<em>¡Añadenos en tu wishlist en Steam!</em> <br>Esto nos ayudaría más de lo que imaginas y hara que más gente pueda conocer nuestro juego." },
-
+  "erika.credits_h":            { en: "Credits",
+                                   es: "Créditos" },
+  "erika.credits_studio_role":  { en: "Indie game studio — Development and art",
+                                   es: "Estudio de juegos indie — Desarrollo y arte" },
+  "erika.credits_studio_btn":   { en: "Learn more",
+                                   es: "Saber más" },
+  "erika.credits_ost_role":     { en: "Composer and musician",
+                                   es: "Compositor y músico" },
+  "erika.credits_sfx_role":     { en: "Sound designer",
+                                   es: "Diseñador de sonido" },                          
   /* TEAM */
   "dev.header":           { en: "𔓘 The developers 𔓘",    es: "𔓘 Los desarrolladores 𔓘" },
   "dev.header_sub":       { en: "Together we have achieved this.",
