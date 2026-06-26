@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team — Crazy Kittens</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/icons/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> <!-- Iconos duros de pelotas -->
+</head>
+
+<body data-page-title="dev.title">
+  <!-- navbar -->
+  <nav class="navbar">
+    <a href="../../index.html" class="navbar-logo">
+      <img src="../../assets/images/logo.png" alt="Crazy Kittens logo">
+      Crazy Kittens
+    </a>
+
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="../../index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="../games/proyectErika.html" data-i18n="nav.erika">Project Erika</a></li>
+      <li><a href="developers.html" data-i18n="nav.team">Equipo</a></li>
+      <li><a href="../../index.html#socials" data-i18n="nav.socials">Redes</a></li>
+
+      <!-- Language selector -->
+      <li>
+        <div class="lang-select-wrap" id="langWrap">
+          <button class="lang-toggle-btn" id="langToggleBtn" aria-label="Cambiar idioma">
+            <i class="bi bi-translate"></i>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            <li><button type="button" data-lang="es">Español</button></li>
+            <li><button type="button" data-lang="en">English</button></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- page header -->
+  <header class="page-header">
+    <h1 data-i18n="dev.header">Los desarrolladores</h1>
+    <p data-i18n="dev.header_sub"></p>
+  </header>
+
+  <!-- Nuestras cartas -->
+  <div class="section">
+    <div class="dev-page-grid">
+
+      <div class="member-card">
+        <div class="member-banner member-banner-1">
+          <div class="member-avatar-wrap"><div class="member-avatar"><i class="bi bi-person"></i></div></div>
+        </div>
+        <div class="member-info">
+
+          <h2>Kiyo</h2>
+          <p class="member-role" data-i18n="dev.kiyo_role"></p>
+          <p data-i18n="dev.kiyo_bio"></p>
+          <div class="member-socials">
+            <a href="https://x.com" class="member-social-link" title="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://instagram.com" class="member-social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-banner member-banner-2">
+          <div class="member-avatar-wrap"><div class="member-avatar"><i class="bi bi-person"></i></div></div>
+        </div>
+        <div class="member-info">
+
+          <h2>IviLegend</h2>
+          <p class="member-role" data-i18n="dev.ivi_role"></p>
+          <p data-i18n="dev.ivi_bio"></p>
+          <div class="member-socials">
+            <a href="https://x.com" class="member-social-link" title="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://instagram.com" class="member-social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-banner member-banner-3">
+          <div class="member-avatar-wrap"><div class="member-avatar"><i class="bi bi-person"></i></div></div>
+        </div>
+        <div class="member-info">
+
+          <h2>Kavsnai</h2>
+          <p class="member-role" data-i18n="dev.kav_role"></p>
+          <p data-i18n="dev.kav_bio"></p>
+          
+          <div class="member-socials">
+            <a href="https://x.com" class="member-social-link" title="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://instagram.com" class="member-social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- sección informativa -->
+    <div style="margin-top:3rem; background:linear-gradient(135deg,#FFD6E7,#FFB6C8); border-radius:var(--radius); padding:2.5rem 2rem; text-align:center;">
+      <h3 style="font-family:'Fredoka One',cursive; font-size:1.6rem; color:var(--text-dark); margin-bottom:0.6rem;" data-i18n="dev.blurb_h">Estamos apenas comenzando</h3>
+      <p style="color:var(--text-soft); max-width:540px; margin:0 auto; line-height:1.65; font-size:0.97rem;" data-i18n="dev.blurb_p">Aún nos queda mucho camino que recorrer y muchos objetivos que mostraros.</p>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.nav_h">Navegar</h4>
+        <ul>
+          <li><a href="../../index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="../games/proyectErika.html" data-i18n="nav.erika">Proyecto Erika</a></li>
+          <li><a href="developers.html" data-i18n="nav.team">Equipo</a></li>
+          <li><a href="../../index.html#socials" data-i18n="nav.socials">Redes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.nav_h2">Juegos</h4>
+        <ul>
+          <li><a href="../games/proyectErika.html" data-i18n="nav.erika">Proyecto Erika</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--socials">
+        <h4 data-i18n="footer.connect_h">Encuéntranos</h4>
+        <div class="footer-social-row">
+          <a href="https://www.tiktok.com/@crazykittensgames" class="footer-social-link"><i class="bi bi-tiktok"></i></a>
+          <a href="https://x.com/crazykittens_" class="footer-social-link"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.youtube.com/@CrazyKittensGames" class="footer-social-link"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/crazykittensgames" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p data-i18n="footer.copy">© Crazy Kittens 2026. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../../i18n.js"></script>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('open');
+        links.classList.toggle('open');
+      });
+      links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        links.classList.remove('open');
+      }));
+    }
+
+    const langBtn      = document.getElementById('langToggleBtn');
+    const langDropdown = document.getElementById('langDropdown');
+
+    if (langBtn && langDropdown) {
+      langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langBtn.classList.toggle('open');
+        langDropdown.classList.toggle('open');
+      });
+
+      langDropdown.querySelectorAll('button[data-lang]').forEach(opt => {
+        opt.addEventListener('click', () => {
+          const lang = opt.dataset.lang;
+          if (typeof setLang === 'function') setLang(lang);
+          langBtn.classList.remove('open');
+          langDropdown.classList.remove('open');
+        });
+      });
+
+      document.addEventListener('click', () => {
+        langBtn.classList.remove('open');
+        langDropdown.classList.remove('open');
+      });
+    }
+  </script>
+  
+</body>
+</html>
