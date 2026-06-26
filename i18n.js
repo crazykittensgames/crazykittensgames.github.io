@@ -1,36 +1,16 @@
-/**
- * Crazy Kittens — Sistema de traducción
- * ─────────────────────────────────────
- * Para añadir un idioma nuevo:
- *   1. Añade su código e.g. "fr" al array LANGUAGES con label y flag.
- *   2. Añade la clave "fr" a cada entrada de STRINGS.
- *   Si una clave no tiene traducción para el idioma elegido,
- *   cae en cascada: idioma elegido → "en" → texto vacío.
- *
- * Uso en HTML:
- *   <span data-i18n="nav.home"></span>
- *   <input data-i18n-placeholder="index.nl_placeholder">
- *   <html> o <body data-page-title="index.title"> para el <title>
- */
-
-/* ─── Idiomas disponibles ──────────────────────────────────────────
-   Añade aquí entradas para activar idiomas nuevos en el desplegable.
-   El orden aquí es el orden del desplegable.
-─────────────────────────────────────────────────────────────────── */
+/* JS que permite una traducción más personalizada y controlada*/
 const LANGUAGES = [
   { code: "en", label: "English",  flag: "🇬🇧" },
   { code: "es", label: "Español",  flag: "🇪🇸" },
-  // { code: "fr", label: "Français", flag: "🇫🇷" },  // ← ejemplo futuro
-  // { code: "de", label: "Deutsch",  flag: "🇩🇪" },
-  // { code: "ja", label: "日本語",    flag: "🇯🇵" },
+  // { code: "fr", label: "Français", flag: "🇫🇷" },  // ejemplo
 ];
 
-/* ─── Textos ────────────────────────────────────────────────────── */
+/* traducciones */
 const STRINGS = {
 
   /* NAV */
   "nav.home":             { en: "Home",             es: "Inicio" },
-  "nav.erika":            { en: "Project Erika",    es: "Proyecto Erika" },
+  "nav.erika":            { en: "Project Erika",    es: "Project Erika" },
   "nav.team":             { en: "Team",             es: "Equipo" },
   "nav.socials":          { en: "Socials",          es: "Redes" },
 
@@ -42,8 +22,8 @@ const STRINGS = {
   /* INDEX */
   "index.title":          { en: "Crazy Kittens",
                             es: "Crazy Kittens" },
-  "index.cover_alt":      { en: "Project Erika — Crazy Kittens",
-                            es: "Proyecto Erika — Crazy Kittens" },
+  "index.cover_alt":      { en: "Project Erika - Crazy Kittens",
+                            es: "Project Erika - Crazy Kittens" },
   "index.welcome":        { en: "Welcome to <strong class='highlight'>Crazy Kittens</strong>",
                             es: "Bienvenidos a <strong class='highlight'>Crazy Kittens</strong>" },
   "index.welcome_sub":    { en: "Thank you all for the <em>interest, support, and trust in us.</em>",
@@ -51,9 +31,9 @@ const STRINGS = {
   "index.news_title":     { en: "Latest News",      es: "Últimas Noticias" },
   "index.news1_date":     { en: "July 2026",        es: "Julio 2026" },
   "index.news1_h":        { en: "First trailer of Project Erika",
-                            es: "Primer trailer de Proyecto Erika" },
+                            es: "Primer trailer de Project Erika" },
   "index.news1_p":        { en: "Officially, the first trailer for Project Erika has been released, offering a first glimpse of the world and its visual style.",
-                            es: "Oficialmente, se ha lanzado el primer trailer de Proyecto Erika, en el que por primera vez se deja echar un vistazo al mundo y su estética." },
+                            es: "Oficialmente, se ha lanzado el primer trailer de Project Erika, en el que por primera vez se deja echar un vistazo al mundo y su estética." },
   "index.news2_h":        { en: "Now on Steam!",
                             es: "¡Ya estamos en Steam!" },
   "index.news2_p":        { en: "After much work, we're excited to announce that we're now on Steam! You can now find us and add us to your wishlist.",
@@ -67,13 +47,19 @@ const STRINGS = {
                             es: "Encuéntranos en las redes sociales" },
   "index.socials_sub":    { en: "Stay up to date and get to know us better on our social media.",
                             es: "Estaté al tanto y conocenos mejor en nuestras redes sociales." },
-
+  
+  /* STUDIO */
+  "studio.about_p1":      { en: "Crazy Kittens is a small <Strong class='highlight'> Spanish indie video game studio</Strong> that emerged from the work of a final degree project.",
+                            es: "Crazy Kittens es un pequeño estudio de <Strong class='highlight'>videojuegos indie Español</Strong> el cual surguio por un trabajo de fin de grado." },
+  "studio.about_p2":      { en: "With the main goal of finishing the development of Project Erika and not stopping there.",
+                            es: "Con el principal objetivo de terminar el desarrollo de Project Erika y <Strong class='highlight'>no detenernos</Strong> ahí." },
+  
   /* PROJECT ERIKA */
-  "erika.title":          { en: "Project Erika — Crazy Kittens",
-                            es: "Proyecto Erika — Crazy Kittens" },
-  "erika.header":         { en: "𔓘 Project Erika 𔓘", es: "𔓘 Proyecto Erika 𔓘" },
-  "erika.header_sub":     { en: "A story about emotions, memory, and the courage to feel.",
-                            es: "Una historia sobre emociones, recuerdos y el valor de sentir." },
+  "erika.title":          { en: "Project Erika - Crazy Kittens",
+                            es: "Project Erika - Crazy Kittens" },
+  "erika.header":         { en: "𔓘 Project Erika 𔓘", es: "𔓘 Project Erika 𔓘" },
+  "erika.header_sub":     { en: "A story about a lost girl with a love for photography.",
+                            es: "La historia de una chica perdida con un amor a la fotografía." },
   "erika.badge_dev":      { en: "In Development",   es: "Desarrollandose" },
   "erika.badge_etq1":     { en: "Good Story",            es: "Buena Trama" },
   "erika.badge_etq2":     { en: "Pixel Art",            es: "Pixelados" },
@@ -94,77 +80,40 @@ const STRINGS = {
                             es: "En Desarrollo — 2026" },
   "erika.info_plat_l":    { en: "Platforms",         es: "Plataformas" },
   "erika.screenshots_h":  { en: "Screenshots",       es: "Capturas de Pantalla" },
-  "erika.wishlist_h":     { en: "Wishlist on Steam 🌸",
-                            es: "Añade a Favoritos en Steam 🌸" },
-  "erika.wishlist_p":     { en: "Adding Project Erika to your wishlist helps us more than you know. It takes two seconds and means the world.",
-                            es: "Añadir Proyecto Erika a tus favoritos nos ayuda más de lo que imaginas. Son dos segundos y significa muchísimo." },
-  "erika.wishlist_btn":   { en: "🎮 Wishlist on Steam", es: "🎮 Añadir a Steam" },
-
-  /* STUDIO */
-  "studio.title":         { en: "Studio — Crazy Kittens",
-                            es: "Estudio — Crazy Kittens" },
-  "studio.header":        { en: "🐾 The Studio",    es: "🐾 El Estudio" },
-  "studio.header_sub":    { en: "Who we are, why we make games, and what drives us.",
-                            es: "Quiénes somos, por qué hacemos juegos y qué nos mueve." },
-  "studio.about_p1":      { en: "Crazy Kittens is an <strong class='highlight'>Spanish indie video game studio</strong> created by three friends that started as a final-year project.",
-                            es: "Crazy Kittens es un <strong class='highlight'>estudio de videojuegos indie Español</strong> creado por tres amigos que arranco por el proyecto de fin de curso." },
-  "studio.about_p2":      { en: "Thanks to shared goals and passions, this small studio was born.",
-                            es: "Gracias a los objetivos y pasiónes en común, nació este pequeño estudio." },
-  "studio.about_p3":      { en: "The first project, which is still in development, Project Erika, is our greatest ambition.",
-                            es: "El primer proyecto, que aun esta en desarrollo, Proyect Erika, es nuestra mayor ambición." },
-  "studio.meet_btn":      { en: "Meet us",  es: "Conocenos" },
-  "studio.stat_members":  { en: "Team members",     es: "Miembros" },
-  "studio.stat_game_in_dev":     { en: "Games in dev",       es: "Juegos en desarrollo" },
-  "studio.stat_founded":  { en: "Founded in ",           es: "Fundado en " },
-  "studio.stat_games":    { en: "released games",  es: "Juegos lanzados" },
-  "studio.values_h":      { en: "What We Believe",  es: "En qué creemos" },
-  "studio.val1_h":        { en: "Stories first",     es: "La historia, primero" },
-  "studio.val1_p":        { en: "Every mechanic, every visual, every sound exists to serve the story. We don't add things because they're cool — we add them because they make you feel more.",
-                            es: "Cada mecánica, cada visual, cada sonido existe para servir a la historia. No añadimos cosas porque molen — las añadimos porque hacen que sientas más." },
-  "studio.val2_h":        { en: "Cozy by design",    es: "Acogedor por diseño" },
-  "studio.val2_p":        { en: "Our games are safe spaces. We want players to feel welcomed, seen, and cared for — not frustrated or overwhelmed.",
-                            es: "Nuestros juegos son espacios seguros. Queremos que los jugadores se sientan bienvenidos, vistos y cuidados — no frustrados ni abrumados." },
-  "studio.val3_h":        { en: "Community-driven",  es: "Impulsados por la comunidad" },
-  "studio.val3_p":        { en: "We build in public, share our process, and listen to the people who play our games. Your voice shapes what we make.",
-                            es: "Construimos en público, compartimos nuestro proceso y escuchamos a quienes juegan nuestros juegos. Tu voz da forma a lo que creamos." },
-  "studio.wishlist_btn":  { en: "🎮 Wishlist on Steam", es: "🎮 Añadir a Steam" },
+  "erika.wishlist_h":     { en: "Did Project Erika catch your attention?",
+                            es: "¿Te ha llamado la atención?" },
+  "erika.wishlist_p":     { en: "<em>Add Project Erika to your Steam wishlist!</em> <br>This would help us more than you know and make it possible for more people to discover our game.",
+                            es: "<em>¡Añadenos en tu wishlist en Steam!</em> <br>Esto nos ayudaría más de lo que imaginas y hara que más gente pueda conocer nuestro juego." },
 
   /* TEAM */
-  "team.title":           { en: "Team — Crazy Kittens",
-                            es: "Equipo — Crazy Kittens" },
-  "team.header":          { en: "🐾 The Team",      es: "🐾 El Equipo" },
-  "team.header_sub":      { en: "Three friends, one dream — building worlds together.",
-                            es: "Tres amigos, un sueño — construyendo mundos juntos." },
-  "team.kiyo_role":       { en: "Lead Developer",   es: "Desarrollador Principal" },
-  "team.kiyo_bio":        { en: "Kiyo is the one who turns ideas into reality — writing the code that powers every mechanic, every dialogue trigger, and every pixel on screen. A problem-solver at heart with a soft spot for game feel and clean architecture.",
-                            es: "Kiyo es quien convierte las ideas en realidad — escribe el código que impulsa cada mecánica, cada disparador de diálogo y cada píxel en pantalla. Un solucionador de problemas con debilidad por el game feel y la arquitectura limpia." },
-  "team.ivi_role":        { en: "Art & Visual Design", es: "Arte y Diseño Visual" },
-  "team.ivi_bio":         { en: "IviLegend is the visual soul of Crazy Kittens. Every character, every background, every UI element passes through their hands. Their art style is warm, expressive, and instantly recognizable — soft palettes with a whimsical edge.",
-                            es: "IviLegend es el alma visual de Crazy Kittens. Cada personaje, cada fondo, cada elemento de interfaz pasa por sus manos. Su estilo es cálido, expresivo e inconfundible — paletas suaves con un toque fantástico." },
-  "team.kav_role":        { en: "Narrative & Sound", es: "Narrativa y Sonido" },
-  "team.kav_bio":         { en: "Kavsnai gives the games their voice — literally and figuratively. Responsible for writing the story, crafting dialogue, and layering the soundscapes that pull players in. If you felt something while playing, that's probably Kavsnai's fault.",
-                            es: "Kavsnai le da voz a los juegos — literal y figuradamente. Responsable de escribir la historia, crear los diálogos y componer los paisajes sonoros que atrapan al jugador. Si sentiste algo mientras jugabas, probablemente es culpa de Kavsnai." },
-  "team.blurb_h":         { en: "We're just getting started 🌸", es: "Acabamos de empezar 🌸" },
-  "team.blurb_p":         { en: "Crazy Kittens was born out of a shared love for story-rich indie games. We're a tiny team with a big heart — no publishers, no deadlines imposed by others — just us, our ideas, and a whole lot of energy drinks.",
-                            es: "Crazy Kittens nació de un amor compartido por los juegos indie con historia. Somos un equipo pequeño con un gran corazón — sin publishers, sin fechas impuestas — solo nosotros, nuestras ideas y muchísimas bebidas energéticas." },
-  "spread.other_h":       { en: "Ways to Support Us", es: "Formas de apoyarnos" },
-  "spread.w1_h":          { en: "Wishlist us on Steam", es: "Añadenos en tu wishlist" },
-  "spread.w1_p":          { en: "It would mean a lot to us to know that you're looking forward to it as much as we are.",
-                            es: "Nos ayudará mucho a saber que estais esperando los juegos con tantas ganas como nosotros." },
-  "spread.w1_btn":        { en: "Expand your wishlist",  es: "Agranda tu wishlist" },
-  "spread.w2_h":          { en: "Follow us on social media",  es: "Siguenos en redes sociales" },
-  "spread.w2_p":          { en: "You'll be able to stay up to date with every progress and news about the games.",
-                            es: "Podrás estar al tanto de cada avance y novedad de los juegos." },
-  "spread.w2_btn":        { en: "See our socials",      es: "Ver nuestras redes" },
+  "dev.header":           { en: "𔓘 The Developers 𔓘",    es: "𔓘 Los desarrolladores 𔓘" },
+  "dev.header_sub":       { en: "Together we have achieved this.",
+                            es: "Entre todos hemos conseguido esto."},
+
+  "dev.kiyo_bio":        { en: "Kiyo always has been there at any hour knowing about anything.",
+                            es: "Kiyo siempre ha estado a cualquier hora sabiendo de cualquier cosa." },
+  "dev.kiyo_role":       { en: "Art & mid developer",    es: "Artista y desarrollador medio" },
+  
+  "dev.ivi_bio":         { en: "IviLegend is the team's jester, who has always been there to help.",
+                            es: "IviLegend es el bufón del equipo, el cual siempre ha estado ahí para ayudar." },
+  "dev.ivi_role":        { en: "Lead Developer",    es: "Desarrollador Principal" },
+  
+  "dev.kav_bio":         { en: "Kavsnai always has managed to encourage the team.",
+                            es: "Kavsnai siempre ha conseguido animar al equipo." },
+  "dev.kav_role":        { en: "Art & low developer",   es: "Artista y desarrollador bajo" },
+
+  "dev.blurb_h":          { en: "♡ We're just getting started ♡", es: "♡ Estamos apenas comenzando ♡" },
+  "dev.blurb_p":          { en: "We still have a long way to go and many goals to show you.",
+                            es: "Aún nos queda mucho camino que recorrer y muchos objetivos que mostraros." },
 
   /* 404 */
-  "404.h2":               { en: "Page not found 🐱", es: "Página no encontrada 🐱" },
-  "404.p":                { en: "Looks like this page wandered off and got lost in the yarn pile.",
-                            es: "Parece que esta página se escapó y se perdió entre los ovillos de lana." },
-  "404.btn":              { en: "🏠 Back to Home",   es: "🏠 Volver al Inicio" },
+  "404.h2":               { en: "Page not found :(", es: "Página no encontrada :(" },
+  "404.p":                { en: "Looks like this page couldn't be found, please try again later.",
+                            es: "Parece que esta página no se ha encontrado, vuelve a intentarlo más tarde." },
+  "404.btn":              { en: "Back to Home",   es: "Volver al Inicio" },
 };
 
-/* ─── Engine ────────────────────────────────────────────────────── */
+/* funciones */
 
 function getLang() {
   // Priority: localStorage → browser language → "en"
