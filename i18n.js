@@ -154,8 +154,8 @@ const STRINGS = {
   "dev.ivi_role":        { en: "Main Programmer",
                            es: "Desarrollador Principal" },
   
-  "dev.kav_bio":         { en: "Kavsnai always has managed to encourage the team.",
-                           es: "Kavsnai siempre ha conseguido animar al equipo." },
+  "dev.kav_bio":         { en: "Heyyy! I'm one of the team's artists, a programmer, and the official coffee taster. Art has been with me ever since I started seeing it everywhere, inspiring me to learn programming so I could create indie games through it.",
+                           es: "¡Heyyy! Soy una de las artistas, programadora y catadora oficial de café del equipo. El arte me acompaña desde que empecé a verlo en todas partes, inspirándome a aprender programación para crear juegos indies con él." },
   "dev.kav_role":        { en: "Art & low developer",
                            es: "Artista y desarrollador bajo" },
 
