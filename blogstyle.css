@@ -32,7 +32,7 @@ body {
     color: var(--rose-strong);
     font-family: magica;
 
-    background-image: url(assets/images/erika_blog_background.png);
+    background-image: url(assets/images/blog/erika_blog_background.png);
     background-color: var(--rose-light);
     background-repeat: repeat;
 }
