@@ -78,7 +78,7 @@ const STRINGS = {
   "studio.stat_members":    { en: "Members",
                               es: "Miembros" },
   "studio.stat_game_in_dev":{ en: "In development",
-                              es: "Fundado en " },
+                              es: "En desarrollo" },
   "studio.stat_founded":    { en: "Founded in ",
                               es: "Fundado en " },
 
@@ -149,13 +149,13 @@ const STRINGS = {
   "dev.kiyo_role":       { en: "Art & mid developer",
                            es: "Artista y desarrollador medio" },
   
-  "dev.ivi_bio":         { en: "Hi there! I'm the team's main programmer, sometimes the court jester, too. I've loved videogames for as long as I can remember, and my passion for indie games led me to learn how to create them myself.",
-                           es: "¡Hola hola! Soy el programador principal del equipo, y a veces también el bufón de la corte.<br><br>Me han encantado los videojuegos desde que tengo uso de razón, y mi amor por los juegos indies me llevó a aprender a crearlos por mi cuenta." },
+  "dev.ivi_bio":         { en: "Hi there! I'm the team's main programmer, sometimes the court jester, too.<br>I've loved videogames for as long as I can remember, and my passion for indie games led me to learn how to create them myself.",
+                           es: "¡Hola hola! Soy el programador principal del equipo, y a veces también el bufón de la corte.<br><>Me han encantado los videojuegos desde que tengo uso de razón, y mi amor por los juegos indies me llevó a aprender a crearlos por mi cuenta." },
   "dev.ivi_role":        { en: "Main Programmer",
                            es: "Desarrollador Principal" },
   
-  "dev.kav_bio":         { en: "Heyyy! I'm one of the team's artists, a programmer, and the official coffee taster. Art has been with me ever since I started seeing it everywhere, inspiring me to learn programming so I could create indie games through it.",
-                           es: "¡Heyyy! Soy una de las artistas, programadora y catadora oficial de café del equipo. El arte me acompaña desde que empecé a verlo en todas partes, inspirándome a aprender programación para crear juegos indies con él." },
+  "dev.kav_bio":         { en: "Heyyy! I'm one of the team's artists, a programmer, and the official coffee taster.<br>Art has been with me ever since I started seeing it everywhere, inspiring me to learn programming so I could create indie games through it.",
+                           es: "¡Heyyy! Soy una de las artistas, programadora y catadora oficial de café del equipo.<br>El arte me acompaña desde que empecé a verlo en todas partes, inspirándome a aprender programación para crear juegos indies con él." },
   "dev.kav_role":        { en: "Art & low developer",
                            es: "Artista y desarrollador bajo" },
 
