@@ -149,8 +149,8 @@ const STRINGS = {
   "dev.kiyo_role":       { en: "Art & mid developer",
                            es: "Artista y desarrollador medio" },
   
-  "dev.ivi_bio":         { en: "Hi there! I'm the team's main programmer, sometimes the court jester, too.<br><br>I've loved videogames for as long as I can remember, and my passion for indie games led me to learn how to create them myself.",
-                           es: "¡Hola hola! Soy el programador principal del equipo, y a veces también el bufón de la corte.<br><br>Me han encantado los videojuegos desde que tengo uso de razón, y mi amor por los juegos indies me llevó a aprender a crearlos por mi cuenta." },
+  "dev.ivi_bio":         { en: "Hi there! I'm the team's main programmer, and a professional clown.<br><br>I've loved videogames for as long as I can remember, and my passion for indie games led me to learn how to create them myself.",
+                           es: "¡Hola hola! Soy el programador principal del equipo, y payaso profesional.<br><br>Me han encantado los videojuegos desde que tengo uso de razón, y mi amor por los juegos indies me llevó a aprender a crearlos por mi cuenta." },
   "dev.ivi_role":        { en: "Main Programmer",
                            es: "Desarrollador Principal" },
   
