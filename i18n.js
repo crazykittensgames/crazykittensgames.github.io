@@ -85,8 +85,8 @@ const STRINGS = {
   /* PROJECT ERIKA */
   "erika.title":          { en: "Project Erika - Crazy Kittens",
                             es: "Project Erika - Crazy Kittens" },
-  "erika.header":         { en: "𔓘 Project Erika 𔓘",
-                            es: "𔓘 Project Erika 𔓘" },
+  "erika.header":         { en: "✿ Project Erika ✿",
+                            es: "✿ Project Erika ✿" },
   "erika.header_sub":     { en: "A story about a lost girl with love for photography.",
                             es: "La historia de una chica perdida con un gran amor por la fotografía." },
   "erika.badge_dev":      { en: "In Development",
@@ -139,25 +139,28 @@ const STRINGS = {
                                   es: "Diseñador de sonido" },
                             
   /* TEAM */
-  "dev.header":           { en: "𔓘 The developers 𔓘",
-                            es: "𔓘 Los desarrolladores 𔓘" },
-  "dev.header_sub":       { en: "Together we are... the Crazy Kittens.",
-                            es: "Juntos somos... los Crazy Kittens."},
+  "dev.header":           { en: "The developers",
+                            es: "Los desarrolladores" },
+  "dev.header_sub":       { en: "Together we are... Crazy Kittens.",
+                            es: "Juntos somos... Crazy Kittens."},
 
+  /* KIYO VAAAAAAAAAAAAAAAAAA */                          
   "dev.kiyo_bio":        { en: "Kiyo always has been there at any hour knowing about anything.",
                            es: "Kiyo siempre ha estado a cualquier hora sabiendo de cualquier cosa." },
-  "dev.kiyo_role":       { en: "Art & mid developer",
-                           es: "Artista y desarrollador medio" },
+  "dev.kiyo_role":       { en: "Art & developer",
+                           es: "Artista y desarrollador" },
   
+  /* iviLegend */  
   "dev.ivi_bio":         { en: "Hi there! I'm the team's main programmer, sometimes the court jester, too. I've loved videogames for as long as I can remember, and my passion for indie games led me to learn how to create them myself.",
                            es: "¡Hola hola! Soy el programador principal del equipo, y a veces también el bufón de la corte. Me han encantado los videojuegos desde que tengo uso de razón, y mi amor por los juegos indies me llevó a aprender a crearlos por mi cuenta." },
   "dev.ivi_role":        { en: "Main Programmer",
                            es: "Desarrollador Principal" },
-  
+
+  /* Kavsnai */  
   "dev.kav_bio":         { en: "Heyyy! I'm one of the team's artists, a programmer, and the official coffee taster. Art has been with me ever since I started seeing it everywhere, inspiring me to learn programming so I could create indie games through it.",
                            es: "¡Heyyy! Soy una de las artistas, programadora y catadora oficial de café del equipo. El arte me acompaña desde que empecé a verlo en todas partes, inspirándome a aprender programación para crear juegos indies con él." },
-  "dev.kav_role":        { en: "Art & low developer",
-                           es: "Artista y desarrollador bajo" },
+  "dev.kav_role":        { en: "Art & developer",
+                           es: "Artista y desarrollador" },
 
   "dev.blurb_h":          { en: "♡ We're just getting started ♡",
                             es: "♡ Estamos apenas comenzando ♡" },
