@@ -17,6 +17,11 @@
   --section-gap: 4rem;
 }
 
+* {
+    scrollbar-width: initial;
+    scrollbar-color: var(--rose-strong) var(--rose-light);
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 

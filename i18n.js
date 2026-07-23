@@ -78,7 +78,7 @@ const STRINGS = {
   "studio.stat_members":    { en: "Members",
                               es: "Miembros" },
   "studio.stat_game_in_dev":{ en: "In development",
-                              es: "Fundado en " },
+                              es: "En desarrollo" },
   "studio.stat_founded":    { en: "Founded in ",
                               es: "Fundado en " },
 

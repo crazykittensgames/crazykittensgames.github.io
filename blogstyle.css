@@ -1,0 +1,57 @@
+/* variables y reset */
+:root {
+  --bg:          #FFF0F5;
+  --white:       #FFFFFF;
+  --rose-light:  #FFD6E7;
+  --rose-mid:    #FFB6C8;
+  --rose-strong: #FF6B9D;
+  --rose-deep:   #E8457A;
+  --text-dark:   #2D1B2E;
+  --text-soft:   #8B5A7A;
+  --shadow:      0 4px 24px rgba(255,107,157,0.13);
+  --radius:      18px;
+  --radius-sm:   10px;
+  --nav-h:       70px;
+  --section-gap: 4rem;
+}
+
+/* background */
+
+/* scrollbar */
+* {
+    scrollbar-width: initial;
+    scrollbar-color: var(--rose-strong) var(--rose-light);
+}
+
+body {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 1.1em;
+    color: var(--rose-strong);
+    font-family: magica;
+
+    background-image: url(assets/images/blog/erika_blog_background.png);
+    background-color: var(--rose-light);
+    background-repeat: repeat;
+}
+
+#header {
+    /*background-image: ;*/
+    height: 190px;
+    border-radius: 45px 45px 0 0;
+    background-clip: padding-box;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    text-align: center;
+    -webkit-text-stroke-color: var(--text-dark);
+    -webkit-text-stroke-width: 2px;
+}
