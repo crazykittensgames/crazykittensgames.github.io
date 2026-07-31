@@ -147,20 +147,20 @@ const STRINGS = {
   /* KIYO VAAAAAAAAAAAAAAAAAA vooooooooooooyyyyyyyyyyyyyyyy*/                          
   "dev.kiyo_bio":        { en: "Sup! The name's Kiyo. I'm mainly an artist and animator in the team, and I'm also involved in part of the coding. Ever since I was just a little kid I've been really fond of cats, videogames and drawing, which is the main reason that brought me into the indie game industry.",
                            es: "¡Buenaass! Soy Kiyo, uno de los artistas y animadores principales del equipo, además de que escribo algo de código. Desde muy pequeño siempre me han gustado mucho los gatos, los videojuegos, la música y dibujar, lo cual me ha llevado a la industria del desarrollo de juegos indie." },
-  "dev.kiyo_role":       { en: "Artist & developer",
-                           es: "Artista y desarrollador" },
+  "dev.kiyo_role":       { en: "Artist & programmer",
+                           es: "Artista y programador" },
   
   /* iviLegend */  
   "dev.ivi_bio":         { en: "Hi there! I'm the team's main programmer, and the court jester, too. I've loved videogames for as long as I can remember, my passion for indie games led me to learn how to create them myself.",
                            es: "¡Hola hola! Soy el programador principal del equipo, y también el bufón de la corte. Me han encantado los videojuegos desde que tengo uso de razón, mi amor por los juegos indies me llevó a aprender a crearlos por mi cuenta." },
   "dev.ivi_role":        { en: "Main Programmer",
-                           es: "Desarrollador Principal" },
+                           es: "Programador Principal" },
 
   /* Kavsnai */  
   "dev.kav_bio":         { en: "Heyyy! I'm one of the team's artists, a programmer, and the official coffee taster. Art has been with me ever since I started seeing it everywhere, inspiring me to learn programming so I could create indie games through it.",
                            es: "¡Heyyy! Soy una de las artistas, programadora y catadora oficial de café del equipo. El arte me acompaña desde que empecé a verlo en todas partes, inspirándome a aprender programación para crear juegos indies con él." },
-  "dev.kav_role":        { en: "Artist & developer",
-                           es: "Artista y desarrollador" },
+  "dev.kav_role":        { en: "Artist & programmer",
+                           es: "Artista y programador" },
 
   "dev.blurb_h":          { en: "♡ We're just getting started ♡",
                             es: "♡ Estamos apenas comenzando ♡" },
