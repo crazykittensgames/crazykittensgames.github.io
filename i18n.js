@@ -137,6 +137,8 @@ const STRINGS = {
                                   es: "Compositor y músico" },
   "erika.credits_sfx_role":     { en: "Sound designer",
                                   es: "Diseñador de sonido" },
+  "erika.credits_efs_role":     { en: "Sound effects",
+                                  es: "Efectos de sónido" },
                             
   /* TEAM */
   "dev.header":           { en: "The developers",
@@ -144,7 +146,7 @@ const STRINGS = {
   "dev.header_sub":       { en: "Together we are... Crazy Kittens.",
                             es: "Juntos somos... Crazy Kittens."},
 
-  /* KIYO VAAAAAAAAAAAAAAAAAA vooooooooooooyyyyyyyyyyyyyyyy*/                          
+  /* KIYO */                          
   "dev.kiyo_bio":        { en: "Sup! The name's Kiyo. I'm mainly an artist and animator in the team, and I'm also involved in part of the coding. Ever since I was just a little kid I've been really fond of cats, videogames and drawing, which is the main reason that brought me into the indie game industry.",
                            es: "¡Buenaass! Soy Kiyo, uno de los artistas y animadores principales del equipo, además de que escribo algo de código. Desde muy pequeño siempre me han gustado mucho los gatos, los videojuegos, la música y dibujar, lo cual me ha llevado a la industria del desarrollo de juegos indie." },
   "dev.kiyo_role":       { en: "Artist & programmer",
